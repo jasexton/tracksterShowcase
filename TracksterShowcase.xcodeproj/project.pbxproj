@@ -12,6 +12,11 @@
 		04293470209636C000805941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429346E209636C000805941 /* Main.storyboard */; };
 		04293472209636C100805941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04293471209636C100805941 /* Assets.xcassets */; };
 		04293475209636C100805941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04293473209636C100805941 /* LaunchScreen.storyboard */; };
+		045F00BB20963DF30077A995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045F00BA20963DF30077A995 /* GoogleService-Info.plist */; };
+		045F00BD20964F860077A995 /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F00BC20964F860077A995 /* Coach.swift */; };
+		045F00C1209653480077A995 /* Coaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F00C0209653480077A995 /* Coaches.swift */; };
+		045F00C3209669CC0077A995 /* CoachTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F00C2209669CC0077A995 /* CoachTableViewController.swift */; };
+		F97165DAED1A20FE4AC8478F /* Pods_TracksterShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA7511E79884314FA8A41FD /* Pods_TracksterShowcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,14 @@
 		04293471209636C100805941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04293474209636C100805941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04293476209636C100805941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429347C209637C800805941 /* Play-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Regular.ttf"; sourceTree = "<group>"; };
+		045F00BA20963DF30077A995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		045F00BC20964F860077A995 /* Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
+		045F00C0209653480077A995 /* Coaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coaches.swift; sourceTree = "<group>"; };
+		045F00C2209669CC0077A995 /* CoachTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTableViewController.swift; sourceTree = "<group>"; };
+		2AA7511E79884314FA8A41FD /* Pods_TracksterShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TracksterShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57217FE5D94C782499F70569 /* Pods-TracksterShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TracksterShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase.debug.xcconfig"; sourceTree = "<group>"; };
+		DCE7F3F1691C4636B70A1E83 /* Pods-TracksterShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TracksterShowcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97165DAED1A20FE4AC8478F /* Pods_TracksterShowcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,9 @@
 			children = (
 				04293469209636C000805941 /* TracksterShowcase */,
 				04293468209636C000805941 /* Products */,
+				0429347C209637C800805941 /* Play-Regular.ttf */,
+				857D854D11170E7E7FF9A4C5 /* Pods */,
+				C84D32BEC93B27498C41AD78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,34 @@
 			isa = PBXGroup;
 			children = (
 				0429346A209636C000805941 /* AppDelegate.swift */,
+				045F00C0209653480077A995 /* Coaches.swift */,
+				045F00BC20964F860077A995 /* Coach.swift */,
 				0429346C209636C000805941 /* ViewController.swift */,
+				045F00C2209669CC0077A995 /* CoachTableViewController.swift */,
 				0429346E209636C000805941 /* Main.storyboard */,
 				04293471209636C100805941 /* Assets.xcassets */,
 				04293473209636C100805941 /* LaunchScreen.storyboard */,
 				04293476209636C100805941 /* Info.plist */,
+				045F00BA20963DF30077A995 /* GoogleService-Info.plist */,
 			);
 			path = TracksterShowcase;
+			sourceTree = "<group>";
+		};
+		857D854D11170E7E7FF9A4C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57217FE5D94C782499F70569 /* Pods-TracksterShowcase.debug.xcconfig */,
+				DCE7F3F1691C4636B70A1E83 /* Pods-TracksterShowcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C84D32BEC93B27498C41AD78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA7511E79884314FA8A41FD /* Pods_TracksterShowcase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04293479209636C100805941 /* Build configuration list for PBXNativeTarget "TracksterShowcase" */;
 			buildPhases = (
+				69E11ABC7AAF74D10487AE74 /* [CP] Check Pods Manifest.lock */,
 				04293463209636C000805941 /* Sources */,
 				04293464209636C000805941 /* Frameworks */,
 				04293465209636C000805941 /* Resources */,
+				1447A295C0DC722C0175C196 /* [CP] Embed Pods Frameworks */,
+				50F57CBC73F110DB873EDD1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04293475209636C100805941 /* LaunchScreen.storyboard in Resources */,
+				045F00BB20963DF30077A995 /* GoogleService-Info.plist in Resources */,
 				04293472209636C100805941 /* Assets.xcassets in Resources */,
 				04293470209636C000805941 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +172,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1447A295C0DC722C0175C196 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F57CBC73F110DB873EDD1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TracksterShowcase/Pods-TracksterShowcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69E11ABC7AAF74D10487AE74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TracksterShowcase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04293463209636C000805941 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0429346D209636C000805941 /* ViewController.swift in Sources */,
+				045F00BD20964F860077A995 /* Coach.swift in Sources */,
+				045F00C1209653480077A995 /* Coaches.swift in Sources */,
 				0429346B209636C000805941 /* AppDelegate.swift in Sources */,
+				045F00C3209669CC0077A995 /* CoachTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +432,11 @@
 		};
 		0429347A209636C100805941 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57217FE5D94C782499F70569 /* Pods-TracksterShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7ZUEK4275;
 				INFOPLIST_FILE = TracksterShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +451,11 @@
 		};
 		0429347B209636C100805941 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE7F3F1691C4636B70A1E83 /* Pods-TracksterShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7ZUEK4275;
 				INFOPLIST_FILE = TracksterShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
